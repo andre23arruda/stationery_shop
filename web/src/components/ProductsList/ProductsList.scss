@@ -1,0 +1,45 @@
+@import '../../theme/variables';
+
+.products-container.container {
+    padding-bottom: 48px;
+
+    .sub-header {
+        margin: 16px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        h1 {
+            margin: 32px 0;
+        }
+
+        .status-area {
+            text-align: left;
+            max-width: 254px;
+            padding: 16px 16px 12px;
+        }
+
+        p {
+            color: $gray-3;
+
+            &.single-products {
+                margin-bottom: 4px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            gap: 26px;
+
+            h1 {
+                margin: 12px 0;
+                width: 158px;
+            }
+
+            .status-area {
+                padding: 6px 0;
+            }
+        }
+    }
+
+}

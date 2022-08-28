@@ -1,0 +1,53 @@
+@import '../../theme/variables';
+
+
+.product-detail.container {
+    .product-name {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        margin: 48px 0;
+
+        @media (max-width: 768px) {
+            margin: 28px 0;
+        }
+    }
+
+    .custom-button {
+        background-color: transparent;
+        padding: 0;
+
+        img {
+            width: 26.67px;
+            height: 26.67px;
+            margin: 6.67px;
+        }
+
+        &:hover, &:focus {
+            background-color: $primary;
+            box-shadow: none;
+
+            img {
+                filter: contrast(0.3) brightness(2.5);
+            }
+        }
+
+        &:focus {
+            background-color: $primary-darkest;
+            box-shadow: inset 0px 0px 0px 2px $logo-background, inset 0px 0px 0px 4px $secondary;
+            outline: none;
+        }
+    }
+
+    @media (min-width: 768px) {
+        max-width: 750px;
+    }
+
+    @media (min-width: 992px) {
+        max-width: 960px;
+    }
+
+    @media (min-width: 1200px) {
+        max-width: 1140px;
+    }
+}

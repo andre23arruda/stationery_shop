@@ -1,0 +1,65 @@
+@import '../../../theme/variables';
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+    background: white;
+    border-radius: 8px;
+    position: relative;
+    margin-bottom: 24px;
+
+    &.touch-active {
+        box-shadow: inset 0px 0px 0px 2px $secondary;
+    }
+
+    &:hover {
+        // border: 2px solid #CDDBE4;
+        // box-shadow: 0px 0px 20px #B1C2CE;
+
+        // Achei que ficou melhor asimm
+        box-shadow: inset 0px 0px 0px 2px #CDDBE4, 0px 0px 20px #B1C2CE;
+    }
+
+    .name-container {
+        width: 100%;
+
+        strong {
+            line-height: 24px;
+            color: $gray-2
+        }
+
+        h2 {
+            color: $black;
+            padding-bottom: 12px;
+            margin-bottom: 12px;
+            border-bottom: 1px solid $gray-1;
+        }
+    }
+
+    .code-category {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+
+            p {
+                color: $black;
+            }
+        }
+
+        button {
+            align-self: flex-end;
+        }
+    }
+
+    @media (max-width: 768px) {
+        margin-bottom: 20px;
+    }
+}
