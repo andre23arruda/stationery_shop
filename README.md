@@ -14,6 +14,15 @@ Esse projeto está sendo desenvolvido com as seguintes tecnologias:
 - [Redis](https://redis.io/)
 - [React](https://reactjs.org)
 
+## Projeto
+Simples projeto de estoque de uma papelaria
+
+<div align="center">
+    <img alt="Models" title="Models" src=".github/inventory.png" width="350px" />
+</div>
+<p align="center">Models</p>
+<hr>
+
 ## Instalação
 
 ### Pré requisitos
